@@ -34,14 +34,8 @@ class Counter extends Component {
     }
 
     handleIncrement = () => {
-        console.log('Increment CLicked', this);
-        //this is not defined (EventHandler only)
+        this.setState({count: this.state.count+1});
     }
-
-    // constructor(){
-    //     super();
-    //     this.handleIncrement = this.handleIncrement.bind(this);
-    // }
 
 
     render() {  
